@@ -1,0 +1,733 @@
+/*Google Fonts*/
+
+/*Roboto 700*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/*Lato 400*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*poppins 700*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/*Montserrat 300*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #383838;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 183, 255);
+  background-image: -webkit-linear-gradient(45deg,
+          rgba(255, 255, 255, 0.335) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.308) 50%,
+          rgba(255, 255, 255, 0.438) 75%,
+          transparent 75%,
+          transparent);
+  border-radius: 100px;
+}
+
+:root{
+    --a-color: #c7c7c7;
+    --nav-a-color: #C5C5C7;
+    --btn-bg: #2d3136;
+    --span-color: #b4c4ce;
+    --bg-color-1: linear-gradient(145deg, #1e2024, #23272b);
+    --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    --background-color: #1a1a1a;
+    --progressbar-title-color: #fff;
+    --red: #c0392b;
+    --blue: #1199ff;
+    --purple: #9b59b6;
+    --orange: #ffa500;
+    --green: #27ae60;
+}
+
+body{
+    background: #212428;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding: auto;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, span, p{
+    color: #fff;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+/*Home Section Start*/
+
+/*Logo*/
+
+.logo{
+    margin-top: 65px;
+    margin-left: 5pc;
+}
+
+.home-content .logo a img{
+    width: 75px;
+    float: left;
+    margin-top: -49px;
+    clip-path: circle();
+    border: 0px solid #000;
+}
+
+.home-content .logo a span{
+    margin-left: 8px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(--a-color);
+    letter-spacing: 1px;
+}
+
+/*Navigation bar*/
+
+.home-content .navigation-bar{
+    float: right;
+}
+
+.home-content .navigation-bar ul{
+    margin-right: 15pc;
+    margin-top: -23px;
+}
+
+.home-content .navigation-bar ul li{
+    display: inline-block;
+}
+
+.home-content .navigation-bar ul li a{
+    padding: 20px;
+    color: var(--nav-a-color);
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-content .navigation-bar ul li a:hover{
+    color: #fff;
+}
+
+.home-content .navigation-bar button {
+    float: right;
+    margin-right: 5pc;
+    margin-top: -35px;
+    background: var(--bg-color-1);
+    padding: 18px;
+    width: 140px;
+    outline: none;
+    border: none;
+    box-shadow: var(--shadow-1);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.home-content .navigation-bar button a{
+    color: #01afff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+}
+
+.home-content .navigation-bar button:hover{
+   transform: translateY(-3px);
+   background: #212428;
+}
+
+/*Home Text*/
+
+.home-content .home-text-wrapper{
+    margin-top: 10pc;
+    margin-left: 20pc;
+}
+
+.home-content .home-text-wrapper h3 {
+    font-size: 15px;
+    color: var(--span-color);
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.home-content .home-text-wrapper h1 {
+    font-size: 55px;
+    line-height: 75px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+.home-content .home-text-wrapper h1 span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    color: #01afff;
+}
+
+.home-content .home-text-wrapper p{
+    font-family: 'Lato', sans-serif;
+    color: var(--span-color);
+    font-size: 18px;
+    line-height: 28px;
+    width: 600px;
+    text-align: justify;
+}
+
+/*btn area*/
+
+.btn-wrapper {
+    margin-left: 20pc;
+    margin-top: 10pc;
+    display: flex;
+}
+
+/*find with me*/
+
+.find-with-me h1{
+    font-size: 12px;
+    color: var(--nav-a-color);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.find-with-me a i {
+    font-size: 20px;
+    margin-top: 25px;
+    padding: 20px;
+    background: var(--bg-color-1);
+    border-radius: 5px;
+    margin-left: 20px;
+    box-shadow: var(--shadow-1);
+    transition: all 0.5s ease;
+    color: var(--span-color);
+}
+
+.find-with-me .icon-wrapper a i:hover{
+   transform: translateY(-8px);
+}
+
+.icon-wrapper {
+    margin-left: -20px;
+}
+
+/*skill btn*/
+
+.skill-btn h1{
+    font-size: 12px;
+    color: var(--nav-a-color);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.skill-btn {
+    margin-left: 10pc;
+}
+
+.skill-btn a img{
+    padding: 17px;
+    margin-top: 25px;
+    background: var(--bg-color-1);
+    padding-right: 20px;
+    padding-left: 20px;
+    box-shadow: var(--shadow-1);
+    border-radius: 5px;
+    margin-left: 20px;
+    transition: all 0.5s ease;
+}
+
+.skill-btn-wrapper{
+    margin-left: -20px;
+}
+
+.skill-btn .skill-btn-wrapper a img:hover{
+    transform: translateY(-8px);
+ } 
+
+/*Hero*/
+
+.home-content .hero img{
+    width: 30pc;
+    margin-top: -10pc;
+}
+
+.hero {
+    float: right;
+    margin-right: 19pc;
+    margin-top: -27pc;
+    background: var(--bg-color-1);
+    box-shadow: var(--shadow-1);
+    height: 27pc;
+}
+
+/*Border*/
+
+.border{
+    border: 1px solid #1b1d20;
+}
+/*Home Section End*/
+
+
+/*About Section Start*/
+
+/*About Heading*/
+
+.about span {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #01afff;
+}
+
+.about h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 55px;
+    letter-spacing: 1px;
+    color: var(--span-color);
+}
+
+/*About Card*/
+
+.about-card-section .min-card .icon i,
+.about-card-section2 .min-card .icon i{
+    font-size: 50px;
+    color: #01afff;
+}
+
+.about-card-section .min-card,
+.about-card-section2 .min-card{
+    transition: all 0.5s ease;
+}
+
+.about-card-section2,
+.about-card-section{
+    display: flex;
+    margin-top: -60px;
+}
+
+.min-card h1{
+    font-size: 25px;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+.min-card{
+    background: var(--bg-color-1);
+    box-shadow: var(--shadow-1);
+    width: 400px;
+    height: 20pc;
+    margin-right: 90px;
+    margin-top: 8pc;
+}
+
+.about-card-section .min-card .icon,
+.about-card-section2 .min-card .icon {
+    margin-top: 45px;
+    margin-left: 35px;
+}
+
+.about-card-section .min-card p,
+.about-card-section2 .min-card p {
+    margin-left: 36px;
+    width: 220px;
+    text-align: justify;
+    margin-top: 14px;
+    line-height: 23px;
+    font-family: 'Lato', sans-serif;
+    color: var(--span-color);
+}
+
+i.fas.fa-arrow-right {
+    margin-left: 40px;
+    margin-top: 2pc;
+    font-size: 20px;
+    color: #01afff;
+    visibility: hidden;
+}
+
+.about-card-section2 .min-card:hover,
+.about-card-section .min-card:hover{
+    transform: translateY(-10px);
+    background: #212428;
+    border-bottom: 5px solid #01afff;
+}
+
+.about-card-section2 .min-card:hover i.fas.fa-arrow-right,
+.about-card-section .min-card:hover i.fas.fa-arrow-right{
+    visibility: visible;
+}
+/*About Section End*/
+
+
+/*Protfolio Section Start*/
+
+/*P Card Heading*/
+
+.protfolio-heading {
+    text-align: center;
+}
+
+.protfolio-heading span{
+    color: #01afff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.protfolio-heading h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    margin-top: 20px;
+    color: var(--span-color);
+}
+
+.p-card{
+    margin-top: 7pc;
+    background: var(--bg-color-1);
+    box-shadow: var(--shadow-1);
+    width: 25pc;
+    height: 27pc;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.p-card-section2,
+.p-card-wrapper{
+    display: flex;
+    margin-top: -50px;
+}
+
+.p-card img{
+    width: 330px;
+    margin-left: 8%;
+    margin-top: 2pc;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.p-card:hover img{
+    transform: scale(1.1);
+}
+
+.p-card span a{
+    margin-left: 30px;
+    color: #01afff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p-card .rate{
+    margin-left: 78%;
+    margin-top: -5%;
+    color: #01afff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p-card h1 {
+    margin-top: 30px;
+    margin-left: 30px;
+    color: var(--span-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Protfolio Section End*/
+
+
+/*My Resume Section Start*/
+
+.my-resume-heading {
+    text-align: center;
+}
+
+.my-resume-heading span{
+    color: #01afff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.my-resume-heading h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    margin-top: 20px;
+    color: var(--span-color);
+}
+
+.design-skill{
+    margin-top: 10%;
+}
+
+.design-skill p{
+    color: #01afff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.design-skill h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin-top: 5px;
+    color: var(--span-color);
+}
+
+.design-skill span{
+    font-family: 'Roboto', sans-serif;
+    color: var(--nav-a-color);
+    font-size: 16px;
+}
+
+.design-skill{
+    max-width: 570px;
+}
+
+.development-skill{
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.development-skill p{
+    color: #01afff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.development-skill h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin-top: 5px;
+    color: var(--span-color);
+}
+
+.development-skill span{
+    font-family: 'Roboto', sans-serif;
+    color: var(--nav-a-color);
+    font-size: 16px;
+}
+
+  .skills-bar {
+    padding-top: 50px;
+  }
+  
+  .skills-bar .bar {
+    margin: 25px 0;
+  }
+  
+  .skills-bar .bar .info span {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .skills-bar .bar .info {
+    margin-bottom: 8px;
+    color: #07374a;
+  }
+  
+  .skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 550px;
+    background: #212428;
+    box-shadow: inset 8px 8px 16px #00000075, inset -8px -8px 16px #383e4575;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  .bar .progress-line span {
+    position: absolute;
+    background: #002ca5fa;
+    height: 100%;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes animate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+/*Design skill*/
+
+  .progress-line .html {
+    width: 100%;
+  }
+  .progress-line .css {
+    width: 97%;
+  }
+  .progress-line .bootstrap {
+    width: 100%;
+  }
+  .progress-line .javascript {
+    width: 87%;
+  }
+  .progress-line .jquery {
+    width: 80%;
+  }
+  .progress-line .c {
+    width: 90%;
+  }
+  .progress-line .r {
+    width: 70%;
+  }
+  .progress-line .v {
+    width: 67%;
+  }
+  .progress-line .a {
+    width: 55%;
+  }
+
+/*Development skill*/
+
+.progress-line .php {
+    width: 67%;
+  }
+.progress-line .python {
+    width: 50%;
+  }  
+.progress-line .laravel {
+    width: 80%;
+  }  
+.progress-line .node-js {
+    width: 70%;
+  }  
+.progress-line .mysql {
+    width: 100%;
+  }  
+.progress-line .firebase {
+    width: 75%;
+  }
+.progress-line .server {
+    width: 100%;
+  }
+.progress-line .whm {
+    width: 100%;
+  }
+
+
+  .bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    right: 0;
+    top: -14px;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-style: #f0f0f0;
+    border-top-color: #07374a;
+  }
+  
+  .bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #f0f0f0;
+    font-size: 12px;
+    font-weight: 700;
+    background: #07374a;
+    padding: 1px 8px;
+    border-radius: 3px;
+  }
+  
+  /*Design Skill*/
+
+  .progress-line .html::after {
+    content: "100%";
+  }
+  .progress-line .css::after {
+    content: "97%";
+  }
+  .progress-line .bootstrap::after {
+    content: "100%";
+  }
+  .progress-line .javascript::after {
+    content: "87%";
+  }
+  .progress-line .c::after {
+    content: "90%";
+  }
+  .progress-line .jquery::after {
+    content: "80%";
+  }
+  .progress-line .r::after {
+    content: "70%";
+  }
+  .progress-line .v::after {
+    content: "67%";
+  }
+  .progress-line .a::after {
+    content: "55%";
+  }
+
+  /*Development skill*/
+
+.progress-line .php::after {
+    content: "67%";
+  }
+.progress-line .python::after {
+    content: "50%";
+  }  
+.progress-line .laravel::after {
+    content: "80%";
+  }  
+.progress-line .node-js::after {
+    content: "70%";
+  }  
+.progress-line .mysql::after {
+    content: "100%";
+  }  
+.progress-line .firebase::after {
+    content: "75%";
+  }
+.progress-line .server::after {
+    content: "100%";
+  }
+.progress-line .whm::after {
+    content: "100%";
+  }
+
+  /* ////........Media Query........//// */
+  
+  @media (max-width: 700px) {
+      .skills{
+          width: 80%;
+      }
+  
+      .skills-bar .bar .progress-line{
+          width: 100%;
+      }
+  }      
+
+  .designSkill-developmentSkill-wrapper{
+      display: flex;
+  }
+
+  /*My Resume Section End*/
